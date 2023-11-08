@@ -1,0 +1,38 @@
+[
+    {
+        "name": "mainBundler",
+        "strings": [
+            "DISCORD",
+            "DISCORD_DESC_SHORT",
+            "DISCORD_DESC_LONG"
+        ],
+        "fileNames": [
+            "./saves/mainBundler.js",
+            "./saves/oldMainBundler.js"
+        ]
+    },
+    {
+        "name": "endpoints",
+        "strings": [
+            "/users/@me",
+            "USER",
+            "USER_RELATIONSHIPS"
+        ],
+        "fileNames": [
+            "./saves/endpoints.js",
+            "./saves/oldEndpoints.js"
+        ]
+    },
+    {
+        "name": "gatewayCodes",
+        "strings": [
+            "REQUEST_GUILD_MEMBERS",
+            "IDENTIFY",
+            "VOICE_STATE_UPDATE"
+        ],
+        "fileNames": [
+            "./saves/gatewayCodes.js",
+            "./saves/oldGatewayCodes.js"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "type": "channelTypes",
+        "keys": [{ "name": "GUILD_TEXT", "value": 0 }, { "name": "GUILD_VOICE", "value": 2}],
+        "matchingRequired": 2
+    },
+    {
+        "type": "messageTypes",
+        "keys": [{ "name": "CALL", "value": 3 }, { "name": "RECIPIENT_ADD", "value": 1 }],
+        "matchingRequired": 2
+    },
+    {
+        "type": "messageFlags",
+        "keys": [{ "name": "CROSSPOSTED", "value": 1 }, { "name": "SUPPRESS_EMBEDS", "value": 4 }],
+        "matchingRequired": 2
+    },
+    {
+        "type": "statusTypes",
+        "keys": [{ "name": "PLAYING", "value": 0 }, { "name": "STREAMING", "value": 1 }],
+        "matchingRequired": 2
+    },
+    {
+        "type": "errors",
+        "keys": [{ "name": "UNKNOWN_ACCOUNT", "value": 10001 }, { "name": "UNKNOWN_APPLICATION", "value": 10002 }],
+        "matchingRequired": 2
+    },
+    {
+        "type": "userFlags",
+        "keys": [ { "name": "STAFF", "value": 1 }, { "name": "PARTNER", "value": 2 }],
+        "matchingRequired": 2
+    }
+]
