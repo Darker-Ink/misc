@@ -198,6 +198,8 @@ const start = async () => {
                     second: null
                 };
             } else if (x.first && x.second === null) {
+                console.log(x)
+
                 return {
                     first: {
                         ...x.first,
