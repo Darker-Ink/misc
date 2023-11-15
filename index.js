@@ -107,7 +107,15 @@ const start = async () => {
         }
 
         for (const difference of differences) {
-            const test = data2[difference.path[0]][difference.path[1]];
+            const foundPath = data2?.[difference.path?.[0]]?.[difference.path?.[1]];
+
+            if (!foundPath) {
+                console.log("No path found");
+
+                WebhookUtils.specialSend("Bug", `\`\`\`js\n${JSON.stringify(difference, null, 4)}\`\`\``, 0xFF0000, {}, "Something broke :( <@379781622704111626>")
+
+                continue;
+            }
 
             let matchedSoFar = 0;
 
@@ -117,7 +125,7 @@ const start = async () => {
                 matchedSoFar = 0;
 
                 for (const key of prediction.keys) {
-                    const found = test.find((x) => x.name === key.name && x.value === key.value);
+                    const found = foundPath.find((x) => x.name === key.name && x.value === key.value);
 
                     if (found) matchedSoFar++;
 
@@ -132,7 +140,7 @@ const start = async () => {
             }
 
             endingDifferences.push({
-                value: difference.path[2] ? test[difference.path[2]] : test[difference.index] ? test[difference.index] : null,
+                value: difference.path[2] ? foundPath[difference.path[2]] : foundPath[difference.index] ? foundPath[difference.index] : null,
                 type: matched ? matched.type : "Unknown",
                 matched,
                 difference,

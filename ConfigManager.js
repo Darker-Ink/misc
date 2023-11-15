@@ -4,7 +4,7 @@
  * @property {string} RepoOwner
  * @property {string} RepoName
  * @property {string} RepoBranch
- * @property {{ url: string, send: { plain: boolean, ping: boolean, errors: boolean, enabled: boolean }, pingMsg: string }[]} Webhooks
+ * @property {{ url: string, send: { plain: boolean, ping: boolean, errors: boolean, enabled: boolean, special: boolean }, pingMsg: string }[]} Webhooks
  * @property {number} Interval
  * @property {boolean} commitNewEndpoints
  * @property {string} commitNewEndpointsMsg
